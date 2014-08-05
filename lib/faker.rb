@@ -154,6 +154,7 @@ module Faker
 end
 
 require 'faker/address'
+require 'faker/class'
 require 'faker/code'
 require 'faker/company'
 require 'faker/finance'
