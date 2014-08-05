@@ -2,15 +2,20 @@
 zh-TW:
   faker:
     address:
-      city: [台北市, 新北市, 台中市, 台南市, 高雄市, 桃園縣, 新竹縣, 苗栗縣, 彰化縣, 南投縣, 雲林縣, 嘉義縣, 屏東縣, 台東縣, 花蓮縣, 宜蘭縣, 澎湖縣, 基隆市, 新竹市, 嘉義市, 金門縣, 連江縣]
+      city_prefix: [台北, 新北, 台中, 台南, 高雄, 桃園, 新竹, 苗栗, 彰化, 南投, 雲林, 嘉義, 屏東, 台東, 花蓮, 宜蘭, 澎湖, 基隆, 新竹, 嘉義, 金門, 連江]
+      city_suffix: [市, 縣]
       building_number: ['#####', '####', '###', '##', '#']
       street_suffix: [大道, 路, 街, 段, 巷, 弄, 衖]
       postcode: ['######']
       state: [臺灣省]
+      city:
+        - "#{city_prefix}#{city_suffix}"
       street_name:
         - "#{Name.last_name}#{street_suffix}"
       street_address:
         - "#{street_name}#{building_number}號"
+      address:
+        - "#{state}#{city}#{street_address}"
       default_country: [台灣]
 
     name:
