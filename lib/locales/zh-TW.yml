@@ -28,7 +28,7 @@ zh-TW:
     school:
       suffix: [國小, 國中, 高中]
       name:
-        - "#{last_name}#{suffix}"
+        - "#{Name.last_name}#{suffix}"
 
     phone_number:
       formats: ['(###)-########', '(###)-#######', '(##)-#########', '(##)-#######',]
