@@ -19,11 +19,16 @@ zh-TW:
       name:
         - "#{first_name}#{last_name}"
 
-    cram:
+    class:
       prefix: [小一, 小二, 小三, 小四, 小五, 小六, 國一, 國二, 國三, 高一, 高二, 高三]
       subject: [國文, 數學, 英文, 物理, 社會, 化學, 先修]
       name:
         - "#{prefix}#{subject}班"
+
+    school:
+      suffix: [國小, 國中, 高中]
+      name:
+        - "#{last_name}#{suffix}"
 
     phone_number:
       formats: ['(###)-########', '(###)-#######', '(##)-#########', '(##)-#######',]
