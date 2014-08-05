@@ -36,4 +36,5 @@ zh-TW:
         - "#{Name.last_name}#{suffix}"
 
     phone_number:
-      formats: ['(###)-########', '(###)-#######', '(##)-#########', '(##)-#######',]
+      area_code: [ "02", "03", "037", "04", '049', '05', '06', '07', '08', '089', '082', '0826', '0836']
+      formats: ['(#{PhoneNumber.area_code})-########', '(#{PhoneNumber.area_code})-#######']
